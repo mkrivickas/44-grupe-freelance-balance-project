@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+}
+
+.row + .row {
+  margin-top: 20px;
+}
+
+.summary-list {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+}
+.summary-list > .item {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+}
+.summary-list > .item > .value {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.summary-list > .item > .title {
+  display: inline-block;
+}
+.summary-list > .item > .title::before {
+  content: "- ";
+}
